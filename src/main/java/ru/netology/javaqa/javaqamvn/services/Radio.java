@@ -78,7 +78,7 @@ public class Radio {
         }
 
         if (currentVolume >= maxVolume) {
-            return;
+            currentVolume = maxVolume;
         }
     }
 
@@ -88,7 +88,7 @@ public class Radio {
         }
 
         if (currentVolume <= minVolume) {
-            return;
+            currentVolume = minVolume;
         }
     }
 }
